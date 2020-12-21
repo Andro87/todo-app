@@ -1,5 +1,5 @@
 import styles from "./List.module.scss";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 export default function List(props) {
     const { onComplete, item } = props;
     const [check, setCheck] = useState(false);
