@@ -1,0 +1,53 @@
+.box {
+    border-bottom: 1px solid var(--circle);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+.delete {
+    display: none;
+}
+.act {
+    color: var(--List);
+    margin-left: 15px;
+    &:hover {
+        font-family: "josephin";
+        font-weight: 700;
+        color: var(--hover);
+        cursor: pointer;
+    }
+}
+
+.cut {
+    color: var(--todo);
+    text-decoration: line-through;
+    margin-left: 15px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--circle);
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.circle_checked {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--circle);
+    outline: none;
+    background: var(--CheckBackground);
+    cursor: pointer;
+}
+
+.cross {
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}

@@ -1,16 +1,63 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "josephin";
+    src: url("../public/fonts/JosefinSans-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "josephin";
+    src: url("../public/fonts/JosefinSans-Regular.ttf");
+    font-weight: 400;
+}
+
+:root {
+    --BrightBlue: hsl(220, 98%, 61%);
+    --CheckBackground: linear-gradient(
+        to bottom,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+    );
+
+    /* Neutral*/
+
+    /* Dark Theme*/
+
+    --BackgroundColor: hsl(235, 21%, 11%);
+    --BoxBackground: hsl(235, 24%, 19%);
+    --List: hsl(234, 39%, 85%);
+    --hover: hsl(236, 33%, 92%);
+    --todo: hsl(234, 11%, 52%); /*todo*/
+    --text: hsl(233, 14%, 35%); /*circle*/
+    --circle: hsl(237, 14%, 26%);
+
+    --BackgroundImage: url("../public/images/bg-desktop-dark.jpg");
+    --BackgroundMobile: url("../public/images/bg-mobile-dark.jpg");
+}
+/* Light Theme*/
+
+[data-theme="light"] {
+    --BoxBackground: hsl(0, 0%, 98%);
+    --BackgroundColor: hsl(236, 33%, 92%);
+    --todo: hsl(233, 11%, 84%);
+    --circle: hsl(236, 9%, 61%);
+    --List: hsl(235, 19%, 35%);
+    --hover: hsl(235, 21%, 11%);
+    --BackgroundImage: url("../public/images/bg-desktop-light.jpg");
+    --BackgroundMobile: url("../public/images/bg-mobile-light.jpg");
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-size: 0.8rem;
+    font-family: "josephin";
+    font-weight: 400;
 }

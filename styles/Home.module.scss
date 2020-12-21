@@ -1,0 +1,199 @@
+.main_wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--BackgroundImage), var(--BackgroundColor);
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 560px) {
+        background: var(--BackgroundMobile), var(--BackgroundColor);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.header {
+    width: 100%;
+    max-width: 600px;
+    padding: 55px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-family: "josephin";
+        font-weight: 700;
+        color: white; /**/
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+    @media screen and (max-width: 560px) {
+        padding: 45px;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 45px;
+    transform: translateY(0%);
+    @media screen and (max-width: 560px) {
+        margin: 50px 45px;
+    }
+}
+
+.switcher {
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.list_wrap {
+    width: 100%;
+    @media screen and (max-width: 560px) {
+        padding: 0 45px;
+    }
+}
+
+.create_box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: var(--BoxBackground);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.todo {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--todo);
+    margin-left: 15px;
+    font-family: "josephin";
+    font-weight: 400;
+}
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--circle);
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.list_container {
+    background-color: var(--BoxBackground);
+    border-radius: 8px;
+}
+
+.info {
+    background-color: var(--BoxBackground);
+    color: var(--circle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    font-family: "josephin";
+    font-weight: 700;
+    font-size: 0.7rem;
+    p {
+        &:hover {
+            color: var(--hover);
+            cursor: pointer;
+        }
+    }
+}
+
+.summary_mobile {
+    display: none;
+    @media screen and (max-width: 560px) {
+        background-color: var(--BoxBackground);
+        border-radius: 8px;
+        color: var(--circle);
+        font-family: "josephin";
+        font-weight: 700;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        button {
+            margin-left: 15px;
+            color: var(--circle);
+            font-family: "josephin";
+            font-weight: 700;
+            font-size: 0.8rem;
+            border: none;
+            outline: none;
+            background: transparent;
+            &:hover {
+                color: var(--hover);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.summary_desktop {
+    color: var(--circle);
+    font-family: "josephin";
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        margin-left: 15px;
+        color: var(--circle);
+        font-family: "josephin";
+        font-weight: 700;
+        font-size: 0.8rem;
+        border: none;
+        outline: none;
+        background: transparent;
+        &:hover {
+            color: var(--hover);
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (max-width: 560px) {
+        display: none;
+    }
+}
+
+.action {
+    margin-left: 15px;
+    color: var(--circle);
+    font-family: "josephin";
+    font-weight: 700;
+    font-size: 0.8rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    &:hover {
+        color: var(--hover);
+        cursor: pointer;
+    }
+}
+
+.reorder {
+    padding: 20px;
+    text-align: center;
+    color: var(--circle);
+    font-family: "josephin";
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
